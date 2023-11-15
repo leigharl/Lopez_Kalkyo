@@ -37,41 +37,41 @@
     function clearInput() {
         currentOperator = '';
         currentInput = '';
-        document.getElementById('result').value = currentInput;
+        document.getElementById('display').value = currentInput;
     }
 
     function appendNum(number) {
         currentInput += number;
-        document.getElementById('result').value = currentInput;
+        document.getElementById('display').value = currentInput;
     }
 
     function add() {
         currentOperator = '+';
         currentInput += currentOperator;
-        document.getElementById('result').value = currentInput;
+        document.getElementById('display').value = currentInput;
     }
 
     function subtract() {
         currentOperator = '-';
         currentInput = currentOperator;
-        document.getElementById('result').value = currentInput;
+        document.getElementById('display').value = currentInput;
     }
 
     function multiply () {
         currentOperator = '*';
         currentInput += currentOperator;
-        document.getElementById('result').value = currentInput;
+        document.getElementById('display').value = currentInput;
     }
 
     function divide() {
         currentOperator = '/';
         currentInput += currentOperator;
-        document.getElementById('result').value = currentInput;
+        document.getElementById('display').value = currentInput;
     }
 
     function calculate() {
         const result = eval(currentInput)
-        document.getElementById('result').value = result;
+        document.getElementById('display').value = result;
         currentInput.toString();
         currentOperator = '';
             }
