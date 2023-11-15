@@ -11,32 +11,32 @@
     <div class="kalkyo">
         <form name="kalkyo" style="border: 15px;">
             <input type="text" name="display" style="width: 265px;">
-            <input class="btn" type="button" value="C" onclick="clearInput" style="background-color: #FAA0A0;"><br>
-            <input class="btn" type="button" value="1" onclick="appendNum(1)">
-            <input class="btn" type="button" value="2" onclick="appendNum(2)">
-            <input class="btn" type="button" value="3" onclick="appendNum(3)">
-            <input class="btn" type="button" value="/" onclick="divide()"><br>
-            <input class="btn" type="button" value="4" onclick="appendNum(4)">
-            <input class="btn" type="button" value="5" onclick="appendNum(5)">
-            <input class="btn" type="button" value="6" onclick="appendNum(6)">
-            <input class="btn" type="button" value="-" onclick="subtract()"><br>
-            <input class="btn" type="button" value="7" onclick="appendNum(7)">
-            <input class="btn" type="button" value="8" onclick="appendNum(8)">
-            <input class="btn" type="button" value="9" onclick="appendNum(9)">
-            <input class="btn" type="button" value="+" onclick="add()"><br>
-            <input class="btn" type="button" value="." onclick="appendNum(.)">
-            <input class="btn" type="button" value="0" onclick="appendNum(0)">
-            <input class="btn" type="button" value="=" onclick="calculate()" style="background-color: #FAA0A0;">
-            <input class="btn" type="button" value="*" onclick="multiply()"><br>
+            <input class="btn" type="button" onclick="clearInput" value="C" style="background-color: #FAA0A0;"><br>
+            <input class="btn" type="button" onclick="appendNum(1)" value="1">
+            <input class="btn" type="button" onclick="appendNum(2)" value="2">
+            <input class="btn" type="button" onclick="appendNum(3)" value="3">
+            <input class="btn" type="button" onclick="divide()" value="/"><br>
+            <input class="btn" type="button" onclick="appendNum(4)" value="4">
+            <input class="btn" type="button" onclick="appendNum(5)" value="5">
+            <input class="btn" type="button" onclick="appendNum(6)" value="6">
+            <input class="btn" type="button" onclick="subtract()" value="-"><br>
+            <input class="btn" type="button" onclick="appendNum(7)" value="7">
+            <input class="btn" type="button" onclick="appendNum(8)" value="8">
+            <input class="btn" type="button" onclick="appendNum(9)" value="9">
+            <input class="btn" type="button" onclick="add()" value="+"><br>
+            <input class="btn" type="button" onclick="appendNum(.)" value=".">
+            <input class="btn" type="button" onclick="appendNum(0)" value="0">
+            <input class="btn" type="button" onclick="calculate()" value="=" style="background-color: #FAA0A0;">
+            <input class="btn" type="button" onclick="multiply()" value="*"><br>
         </form>
     </div>
 <script>
-    let currentaInput = '';
-    let currentOperator = '';
+    let currentaInput = "";
+    let currentOperator = "";
 
     function clearInput() {
-        currentOperator = '';
-        currentInput = '';
+        currentOperator = ' ';
+        currentInput = ' ';
         document.getElementById('display').value = currentInput;
     }
 
@@ -74,7 +74,7 @@
         document.getElementById('display').value = result;
         currentInput.toString();
         currentOperator = '';
-            }
+    }
 
 </script>
     
